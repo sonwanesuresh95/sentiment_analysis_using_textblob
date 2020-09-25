@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+<center>
+    <h1>Sentiment Analysis using TextBlob</h1>
+    <form action="/predict" method="post">
+        <p align="center"><b>Enter Text here:</b></p>
+    <p align="center"><textarea id="text" name="text" rows="2" cols="100">
+    </textarea></p>
+    <p align="center"><input type="submit" value="Submit"></p>
+</form>
+    <table border="3">
+        <tr>
+            <td>Text</td>&nbsp
+            <td>{{orig_text}}</td>
+        </tr>
+        <tr>
+            <td>Polarity</td>&nbsp
+            <td>{{sentiment}}</td>
+        </tr>
+        <tr>
+            <td>Subjectivity</td>&nbsp
+            <td>{{subj}}</td>
+        </tr>
+        <tr>
+            <td>polarity_confidence</td>&nbsp
+            <td>{{polarity}}</td>
+        </tr>
+        <tr>
+            <td>subjectivity_confidence</td>&nbsp
+            <td>{{subjectivity}}</td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>
